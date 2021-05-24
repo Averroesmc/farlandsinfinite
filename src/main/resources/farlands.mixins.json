@@ -1,0 +1,40 @@
+{
+  "required": true,
+  "package": "site.geni.farlands.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "common.world.WorldMixin",
+    "common.generators.CavesChunkGeneratorMixin",
+    "common.generators.OverworldChunkGeneratorMixin",
+    "common.generators.SurfaceChunkGeneratorMixin",
+    "common.generators.FloatingIslandsChunkGeneratorMixin",
+    "common.world.gen.feature.OreFeatureMixin",
+    "common.commands.ForceLoadCommandMixin",
+    "common.commands.WorldBorderCommandMixin",
+    "common.entity.EntityMixin",
+    "common.entity.FallingBlockEntityMixin",
+    "common.noise.OctavePerlinNoiseSamplerMixin",
+    "common.player.PlayerEntityMixin",
+    "common.util.math.BlockPosMixin",
+    "common.util.math.ChunkSectionPosMixin",
+    "common.block.TntBlockMixin",
+    "server.MinecraftServerMixin",
+    "server.player.ServerPlayNetworkHandlerMixin",
+    "server.player.ServerPlayerEntityMixin"
+  ],
+  "client": [
+    "client.block.LeavesBlockMixin",
+    "client.block.RepeaterBlockMixin",
+    "client.block.HorizontalFacingBlockMixin",
+    "client.block.entity.BlockEntityMixin",
+    "client.block.entity.EnchantingTableBlockEntityMixin",
+    "client.fluid.LavaFluidMixin",
+    "client.item.ItemMixin",
+    "client.world.ClientWorldMixin",
+    "client.gui.ChatScreenMixin"
+  ],
+  "minVersion": "0.7.11",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
