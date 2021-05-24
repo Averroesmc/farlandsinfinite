@@ -21,7 +21,7 @@ public class Config {
 	public ConfigValue<Boolean> farLandsEnabled = ConfigValue.builder(Boolean.class)
 		.withName("farLandsEnabled")
 		.withComment("Whether or not the Far Lands should generate.")
-		.withDefaultValue(false)
+		.withDefaultValue(true)
 		.withParent(general)
 		.build();
 	public ConfigValue<Boolean> killFallingBlockEntitiesInFarLands = ConfigValue.builder(Boolean.class)
